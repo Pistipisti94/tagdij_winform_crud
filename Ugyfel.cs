@@ -24,7 +24,7 @@ namespace tagdij_winform_crud
         }
         public override string ToString()
         {
-            return $"{azon};{nev};{szuldatum};{irszam};{orszag}";
+            return $"{azon};{nev};{szuldatum.ToString("yyyy-MM-dd")};{irszam};{orszag}";
         }
     }
 }

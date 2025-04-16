@@ -53,8 +53,8 @@
             // 
             // ugyfellista
             // 
-            this.ugyfellista.FormattingEnabled = true;
             resources.ApplyResources(this.ugyfellista, "ugyfellista");
+            this.ugyfellista.FormattingEnabled = true;
             this.ugyfellista.Name = "ugyfellista";
             this.ugyfellista.Click += new System.EventHandler(this.ugyfellista_Click);
             // 
@@ -86,6 +86,7 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label2.Name = "label2";
             // 
             // menuStrip1
