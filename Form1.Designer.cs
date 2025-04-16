@@ -61,7 +61,22 @@
             // befizetett
             // 
             resources.ApplyResources(this.befizetett, "befizetett");
+            this.befizetett.Maximum = new decimal(new int[] {
+            200000,
+            0,
+            0,
+            0});
+            this.befizetett.Minimum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.befizetett.Name = "befizetett";
+            this.befizetett.Value = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             // 
             // label1
             // 

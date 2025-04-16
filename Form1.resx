@@ -218,18 +218,6 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="befizetésToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="befizetésToolStripMenuItem.Text" xml:space="preserve">
-    <value>Befizetés</value>
-  </data>
-  <data name="adatMódosításToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
-  </data>
-  <data name="adatMódosításToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adatmódosítás</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -253,6 +241,18 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>15</value>
+  </data>
+  <data name="befizetésToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="befizetésToolStripMenuItem.Text" xml:space="preserve">
+    <value>Befizetés</value>
+  </data>
+  <data name="adatMódosításToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="adatMódosításToolStripMenuItem.Text" xml:space="preserve">
+    <value>Adatmódosítás</value>
   </data>
   <data name="befizetes_button.Location" type="System.Drawing.Point, System.Drawing">
     <value>198, 239</value>
