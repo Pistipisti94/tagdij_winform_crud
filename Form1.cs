@@ -94,7 +94,7 @@ namespace tagdij_winform_crud
 
         private void befizetes_button_Click(object sender, EventArgs e)
         {
-            Adatbazis.Create(Convert.ToInt32(azon_textBox1.Text),Convert.ToInt32(befizetett));
+            Adatbazis.Create(Convert.ToInt32(azon_textBox1.Text),Convert.ToInt32(befizetett.Value));
         }
     }
 }
