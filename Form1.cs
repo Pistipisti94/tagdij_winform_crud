@@ -104,5 +104,17 @@ namespace tagdij_winform_crud
                 MessageBox.Show("Nincs ügyfél kiválasztva");
             }
         }
+
+        private void modositas_button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Adatbazis.Modosit(Convert.ToInt32(azon_textBox1.Text),nev_textBox1.Text,Convert.ToDateTime(szuldatum_textBox2.Text), Convert.ToInt32(irszam_textBox3.Text),orszag_textBox4.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+        }
     }
 }

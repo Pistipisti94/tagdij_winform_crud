@@ -160,6 +160,7 @@
             resources.ApplyResources(this.modositas_button1, "modositas_button1");
             this.modositas_button1.Name = "modositas_button1";
             this.modositas_button1.UseVisualStyleBackColor = true;
+            this.modositas_button1.Click += new System.EventHandler(this.modositas_button1_Click);
             // 
             // azon_textBox1
             // 

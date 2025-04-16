@@ -89,6 +89,23 @@ namespace tagdij_winform_crud
             KapcsZar();
 
         }
+        public void Modosit(int azon, string nev, DateTime szulido, int irszam, string orsz)
+        {
+
+            _command.CommandText = "UPDATE `ugyfel` SET `nev`= @nev,`szuldatum`= @szulido,`irszam`= @irszam,`orsz`= @orsz WHERE `azon` = @azon";
+            _command.Parameters.Clear();
+            _command.Parameters.AddWithValue("@azon", azon);
+            _command.Parameters.AddWithValue("@nev", nev);
+            _command.Parameters.AddWithValue("@@szulido", szulido.ToString("yyyy-MM-dd"));
+            _command.Parameters.AddWithValue("@irszam", irszam);
+            _command.Parameters.AddWithValue("@orsz", orsz);
+
+            KapcsNyit();
+            _command.ExecuteNonQuery();
+            MessageBox.Show("Sikeres módosítás", "Hozzáadva", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            KapcsZar();
+
+        }
 
     }
 }
