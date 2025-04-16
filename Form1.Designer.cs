@@ -28,13 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.ugyfellista = new System.Windows.Forms.ListBox();
+            this.befizetett = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.befizetésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adatMódosításToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.befizetett)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // ugyfellista
+            // 
+            this.ugyfellista.FormattingEnabled = true;
+            this.ugyfellista.Location = new System.Drawing.Point(12, 51);
+            this.ugyfellista.Name = "ugyfellista";
+            this.ugyfellista.Size = new System.Drawing.Size(120, 212);
+            this.ugyfellista.TabIndex = 0;
+            // 
+            // befizetett
+            // 
+            this.befizetett.Location = new System.Drawing.Point(198, 51);
+            this.befizetett.Name = "befizetett";
+            this.befizetett.Size = new System.Drawing.Size(120, 20);
+            this.befizetett.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Ügyfelek:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(138, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Befizetett:";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.befizetésToolStripMenuItem,
+            this.adatMódosításToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(467, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // befizetésToolStripMenuItem
+            // 
+            this.befizetésToolStripMenuItem.Name = "befizetésToolStripMenuItem";
+            this.befizetésToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.befizetésToolStripMenuItem.Text = "Befizetés";
+            this.befizetésToolStripMenuItem.Click += new System.EventHandler(this.befizetésToolStripMenuItem_Click);
+            // 
+            // adatMódosításToolStripMenuItem
+            // 
+            this.adatMódosításToolStripMenuItem.Name = "adatMódosításToolStripMenuItem";
+            this.adatMódosításToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.adatMódosításToolStripMenuItem.Text = "Adatmódosítás";
+            this.adatMódosításToolStripMenuItem.Click += new System.EventHandler(this.adatMódosításToolStripMenuItem_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(467, 318);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.befizetett);
+            this.Controls.Add(this.ugyfellista);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form1";
+            this.Text = "Tagdíj";
+            ((System.ComponentModel.ISupportInitialize)(this.befizetett)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox ugyfellista;
+        private System.Windows.Forms.NumericUpDown befizetett;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem befizetésToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adatMódosításToolStripMenuItem;
     }
 }
 

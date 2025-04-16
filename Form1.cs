@@ -16,5 +16,21 @@ namespace tagdij_winform_crud
         {
             InitializeComponent();
         }
+
+        private void adatMódosításToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ugyfellista.Visible= false;
+            befizetett.Visible= false;
+            label1.Visible= false;
+            label2.Visible= false;
+        }
+
+        private void befizetésToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ugyfellista.Visible = true;
+            befizetett.Visible = true;
+            label1.Visible = true;
+            label2.Visible = true;
+        }
     }
 }
