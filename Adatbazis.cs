@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace tagdij_winform_crud
 {
@@ -64,6 +65,29 @@ namespace tagdij_winform_crud
             }
             KapcsZar();
             return ugyfelek;
+        }
+        public void Create(int azon,int osszeg)
+        {
+
+            _command.CommandText = "INSERT INTO `befiz`(`azon`, `datum`, `osszeg`) VALUES (@azon,@datum,@osszeg)";
+            try
+            {
+                _command.Parameters.Clear();
+                _command.Parameters.AddWithValue("@azon", azon);
+                _command.Parameters.AddWithValue("@datum", DateTime.Now);
+                _command.Parameters.AddWithValue("@osszeg", osszeg);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+            KapcsNyit();
+            _command.ExecuteNonQuery();
+            MessageBox.Show("Sikeres rögzítés", "Rögzítve", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            KapcsZar();
+
         }
 
     }

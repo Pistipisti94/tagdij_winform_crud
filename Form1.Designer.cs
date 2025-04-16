@@ -46,6 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.modositas_button1 = new System.Windows.Forms.Button();
+            this.azon_textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.befizetett)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +56,7 @@
             this.ugyfellista.FormattingEnabled = true;
             resources.ApplyResources(this.ugyfellista, "ugyfellista");
             this.ugyfellista.Name = "ugyfellista";
+            this.ugyfellista.Click += new System.EventHandler(this.ugyfellista_Click);
             // 
             // befizetett
             // 
@@ -96,6 +98,7 @@
             resources.ApplyResources(this.befizetes_button, "befizetes_button");
             this.befizetes_button.Name = "befizetes_button";
             this.befizetes_button.UseVisualStyleBackColor = true;
+            this.befizetes_button.Click += new System.EventHandler(this.befizetes_button_Click);
             // 
             // nev_textBox1
             // 
@@ -143,11 +146,17 @@
             this.modositas_button1.Name = "modositas_button1";
             this.modositas_button1.UseVisualStyleBackColor = true;
             // 
+            // azon_textBox1
+            // 
+            resources.ApplyResources(this.azon_textBox1, "azon_textBox1");
+            this.azon_textBox1.Name = "azon_textBox1";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
+            this.Controls.Add(this.azon_textBox1);
             this.Controls.Add(this.modositas_button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -194,6 +203,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button modositas_button1;
+        private System.Windows.Forms.TextBox azon_textBox1;
     }
 }
 

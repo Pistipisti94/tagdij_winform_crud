@@ -24,7 +24,7 @@ namespace tagdij_winform_crud
         }
         public override string ToString()
         {
-            return $"{nev}";
+            return $"{azon};{nev};{szuldatum};{irszam};{orszag}";
         }
     }
 }

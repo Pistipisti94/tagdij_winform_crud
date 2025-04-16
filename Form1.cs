@@ -17,7 +17,7 @@ namespace tagdij_winform_crud
             InitializeComponent();
         }
         Adatbazis Adatbazis = new Adatbazis();
-        List<Ugyfel> futars = new List<Ugyfel>();
+        List<Ugyfel> ugyfels = new List<Ugyfel>();
 
         private void adatMódosításToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -66,11 +66,35 @@ namespace tagdij_winform_crud
         }
         private void LoadUgyfel()
         {
-            futars = Adatbazis.GetAllugyfel();
-            foreach (var item in futars)
+            ugyfels = Adatbazis.GetAllugyfel();
+            foreach (var item in ugyfels)
             {
                 ugyfellista.Items.Add(item);                    
             }
+        }
+
+
+        private void ugyfellista_Click(object sender, EventArgs e)
+        {
+            string selectedItem = ugyfellista.SelectedItem.ToString();
+            string[] parts = selectedItem.Split(';');
+            if (parts.Length >= 5)
+            {
+                azon_textBox1.Text = parts[0];
+                nev_textBox1.Text = parts[1];
+                szuldatum_textBox2.Text = parts[2];
+                irszam_textBox3.Text = parts[3];
+                orszag_textBox4.Text = parts[4];
+            }
+            else
+            {
+                MessageBox.Show("A kiválasztott sor nem tartalmaz elegendő adatot.");
+            }            
+        }
+
+        private void befizetes_button_Click(object sender, EventArgs e)
+        {
+            Adatbazis.Create(Convert.ToInt32(azon_textBox1.Text),Convert.ToInt32(befizetett));
         }
     }
 }
