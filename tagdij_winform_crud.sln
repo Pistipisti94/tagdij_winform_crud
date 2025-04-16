@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tagdij_winform_crud", "tagdij_winform_crud.csproj", "{B560533C-5EC7-4672-969B-69CF5963740C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B560533C-5EC7-4672-969B-69CF5963740C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B560533C-5EC7-4672-969B-69CF5963740C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B560533C-5EC7-4672-969B-69CF5963740C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B560533C-5EC7-4672-969B-69CF5963740C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1000B305-0B7A-4A8C-9FA2-48B9B646B7D8}
+	EndGlobalSection
+EndGlobal
